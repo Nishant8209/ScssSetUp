@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+// Generate CSS variables for light mode
+:root {
+  --custom-color: #{$customcolor};
+  --font-family: #{$font-family};
+  --font-size: #{$font-size};
+  --font-weight: #{$font-weight};
+  --line-height: #{$line-height};
+  --text-color: #{$textcolor};
+  --hover-opacity: #{$hover-opacity};
+  --spacing-small: #{$spacing-small};
+}
+
+
+.dark-mode {
+  --custom-color: #de1304;
+ 
+  --text-color: #fafafa;
+ 
+}
+.custom-mode {
+  --custom-color: #181bb2;
+ 
+  --text-color: #14a50f;
+}

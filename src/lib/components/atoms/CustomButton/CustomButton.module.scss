@@ -1,0 +1,26 @@
+
+.customButton {
+  border-radius: 10px;
+  background-color: var(--custom-color);
+  color: var(--text-color);
+  border: none;
+  transition: opacity 0.3s ease-in-out;
+  
+  &:hover {
+    opacity: var(--hover-opacity);
+  }
+}
+
+.icon {
+  margin: 0 var(--spacing-small);
+  display: inline-flex;
+  align-items: center;
+  
+  &.left {
+    margin-right: var(--spacing-small);
+  }
+  
+  &.right {
+    margin-left: var(--spacing-small);
+  }
+}

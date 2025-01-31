@@ -1,0 +1,50 @@
+{
+  "name": "microfrontend",
+  "private": false,
+  "version": "0.0.91",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./microfrontend.min.css": "./dist/microfrontend.min.css",
+    "./icons/sprite": "./public/Icons/sprite.svg"
+  },
+  "files": [
+    "dist",
+    "public/Icons/sprite.svg"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npx postcss dist/index.css -o dist/microfrontend.min.css",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.83.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^4.5.0"
+  }
+}
