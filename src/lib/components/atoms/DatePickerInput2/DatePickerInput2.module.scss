@@ -1,0 +1,52 @@
+.datePicker {
+    position: relative;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.dateInput {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px; // Default border radius for normal state
+    font-size: 16px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 2px solid var(--input-border);
+    outline: none; // Removes browser default outline
+
+    /* Apply border when the popover is open */
+    &.active {
+        border: 2px solid var(--input-focus-border2);
+        border-radius: 5px ;
+    }
+}
+
+.calendarIcon {
+    position: absolute;
+    right: 10px;
+    color: var(--input-icon-color);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.selectedContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Ensure items stay in one line */
+    margin-right: 30px;
+}
+
+.tag {
+    background-color: #015c13; /* Light grey background */
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+}

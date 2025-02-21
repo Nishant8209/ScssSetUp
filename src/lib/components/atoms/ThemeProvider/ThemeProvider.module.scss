@@ -1,0 +1,11 @@
+
+.themeWrapper {
+  * {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    color: var(--text-color);
+  }
+}

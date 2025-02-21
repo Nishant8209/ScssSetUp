@@ -2,6 +2,8 @@ import React from 'react';
 import Icon from '../Icon';
 import styles from './CustomButton.module.scss'; // Import the SCSS module
 
+import withTheme from '../ThemeProvider';
+
 interface ButtonProps {
   label: string; // Text label for the button
   iconName?: string; // Optional icon name
@@ -28,7 +30,7 @@ const CustomButton: React.FC<ButtonProps> = ({
   };
 
   return (
-    <div className='customComponent'>
+
       <button
         onClick={onClick}
         className={`  ${sizeClasses[size]} ${className} ${styles.customButton}`} // Combine Bootstrap and SCSS styles
@@ -41,9 +43,8 @@ const CustomButton: React.FC<ButtonProps> = ({
           <Icon name={iconName} className={styles.icon} spritePath={iconPath} />
         )}
       </button>
-      
-    </div>
+    
+    
   );
 };
-
-export default CustomButton;
+export default withTheme(CustomButton);

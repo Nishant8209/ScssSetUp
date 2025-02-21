@@ -10,17 +10,51 @@
   --text-color: #{$textcolor};
   --hover-opacity: #{$hover-opacity};
   --spacing-small: #{$spacing-small};
+
+  --calendar-bg: #{$calendar-bg};
+  --border-color: #{$border-color};
+  --heading-color: #{$heading-color};
+  --text-color: #{$text-color};
+  --line-color: #{$line-color};
+  --nav-text-color: #{$nav-text-color};
+  --hover-bg: #{$hover-bg};
+  --weekend-color: #{$weekend-color};
+  --neighboring-month-color: #{$neighboring-month-color};
+  --selected-bg: #{$selected-bg};
+  --selected-hover-bg: #{$selected-hover-bg};
+  --weekday-color-:#{$weekday-color};
+  --calendar-shadow:#{$calendar-shadow};
+  //input filed
+  --input-bg: #{$input-bg};
+  --input-text: #{$input-text};
+  --input-border: #{$input-border};
+  --input-focus-border: #{$input-focus-border};
+  --input-icon-color: #{$input-icon-color};
+  --input-focus-border2:#{$input-focus-border2};
 }
 
 
 .dark-mode {
   --custom-color: #de1304;
- 
   --text-color: #fafafa;
- 
-}
-.custom-mode {
-  --custom-color: #181bb2;
- 
-  --text-color: #14a50f;
+   --calendar-bg: #{$calendar-bg-dark};
+  --border-color: #{$border-color-dark};
+  --heading-color: #{$heading-color-dark};
+  --text-color: #{$text-color-dark};
+  --line-color: #{$line-color-dark};
+  --nav-text-color: #{$nav-text-color-dark};
+  --hover-bg: #{$hover-bg-dark};
+  --weekend-color: #{$weekend-color-dark};
+  --neighboring-month-color: #{$neighboring-month-color-dark};
+  --selected-bg: #{$selected-bg-dark};
+  --selected-hover-bg: #{$selected-hover-bg-dark};
+  --weekday-color:#{$weekday-color-dark};
+  --calendar-shadow:#{$calendar-shadow-dark};
+
+  --input-bg: #{$input-bg-dark};
+  --input-text: #{$input-text-dark};
+  --input-border: #{$input-border-dark};
+  --input-focus-border: #{$input-focus-border-dark};
+  --input-icon-color: #{$input-icon-color-dark};
+  --input-focus-border2:#{$input-focus-border2-dark};
 }

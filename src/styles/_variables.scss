@@ -8,3 +8,50 @@ $textcolor: #100b0b;
 $hover-opacity: 0.8;
 $spacing-small: 0.5rem;
 
+
+//input light mode field variables
+$input-bg:#ffffff;
+$input-text: #040404;
+$input-border: #0e0d0d;
+$input-focus-border: #0a0a0a;
+$input-icon-color: #515050;
+$input-focus-border2: #0a0a0a;
+
+//input dark mode field variables
+$input-bg-dark:#121212;
+$input-text-dark: #ffffff;
+$input-border-dark: #ffffff;
+$input-focus-border-dark: #ffffff;
+$input-icon-color-dark: #ffffff;
+$input-focus-border2-dark: #00a917;
+
+//light mode color
+$calendar-bg: #ffffff;
+$border-color: #0a0a0a;
+$heading-color: #070707;
+$text-color: #666;
+$date-color:#070707;
+$line-color: #0e0e0e;
+$nav-text-color: #1a1a1a;
+$hover-bg: #ffffff;
+$weekend-color: #0a0a0a;
+$neighboring-month-color: #a4a4a4;
+$selected-bg: #f2b201;
+$selected-hover-bg: #e6c703;
+$weekday-color:#000000;
+$calendar-shadow:#d8d8d8;
+
+// Dark  mode color
+$calendar-bg-dark: #121212;
+$border-color-dark: #ffffff;
+$heading-color-dark: #ffffff;
+$text-color-dark: #ededed;
+$line-color-dark: #ffffff;
+$nav-text-color-dark: #121212;
+$hover-bg-dark: #000000;
+$weekend-color-dark: #ffffff;
+$neighboring-month-color-dark: #a4a4a4;
+$selected-bg-dark: #f2b201;
+$selected-hover-bg-dark: #e6c703;
+$weekday-color-dark:#ffffff;
+$calendar-shadow-dark:#373737;

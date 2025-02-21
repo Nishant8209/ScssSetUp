@@ -1,29 +1,21 @@
+import React from "react";
 
-import './App.scss'
-import CustomButton from './lib/components/atoms/CustomButton'
-// import '../src/styles/theme.scss'
-// import '../src/styles/_variables.scss'
+import "bootstrap/dist/css/bootstrap.min.css";
 import './index.scss'
-import iconpath from '../public/Icons/sprite.svg'
-import { Icon } from './lib'
-function App() {
+import "./App.scss";
+import DatePicker from "./lib/components/atoms/DatePickerInput";
+import DatePicker2 from "./lib/components/atoms/DatePickerInput2";
+
+const App: React.FC = () => {
 
   return (
     <>
-     <Icon name='apple' className='' spritePath={iconpath} />
-      <CustomButton
-        label="Click Me"
-        iconName="icon-home"
-        iconPosition="left"
-        size="large"
-        onClick={() => alert('Button clicked!')}
-        className=""
-        iconPath="/assets/icons/sprite.svg"
-      />
-      <h2>hi this skdmkdk ccc</h2>
-     
+      <div className="test">
+        <div className=""><DatePicker /></div>
+        <div className="pt-5"><DatePicker2 /></div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

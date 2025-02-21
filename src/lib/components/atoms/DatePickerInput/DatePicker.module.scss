@@ -1,0 +1,42 @@
+.datePicker {
+  position: relative;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dateInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px; // Default border radius for normal state
+  font-size: 16px;
+  background-color: var(--input-bg);
+  color:  var(--input-text); // Fixed the issue
+  border: 2px solid var(--input-border);
+  outline: none; // Removes browser default outline
+ 
+
+  /* Apply styles when focused, active, or popover is open */
+  &:focus,
+  &:active,
+  &.active {
+    border: 2px solid var(--input-focus-border);
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    
+  }
+}
+.dateInput::placeholder {
+  color: var(--input-text); 
+}
+.calendarIcon {
+  position: absolute;
+  right: 15px;
+  color: var(--input-icon-color);
+  cursor: pointer;
+  font-size: 18px;
+}

@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Use Nginx for the production server
-FROM nginx:alpine
+FROM nginx:1-alpine-slim
 
 # Copy the build output from the previous stage to Nginx's web server directory
 COPY --from=build /app/dist /usr/share/nginx/html
