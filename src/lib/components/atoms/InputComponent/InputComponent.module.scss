@@ -1,0 +1,61 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.inputField {
+  width: 100%;
+  padding: 1.5rem 0.8rem 0.2rem; // Increase top padding slightly
+  border: 1px solid var(--input-border);
+  outline: none;
+  font-size: 1.15rem;
+  transition: all 0.25s ease-in-out;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+.floatingPlaceholder {
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  padding: 0 0.25rem;
+  color: var( --input-text);
+  font-size: 1.15rem;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.inputField:focus + .floatingPlaceholder,
+.inputField:not(:placeholder-shown) + .floatingPlaceholder {
+  top: 0.25rem;
+  font-size: 1rem;
+  color: var( --input-text);
+  background-color: transparent;
+}
+
+.inputField:focus {
+  box-shadow: 0 0 5px var(  --input-border);
+  border-color: var(  --input-border);
+}
+
+.errorBorder {
+  border-color: var( --input-error-color) !important;
+  box-shadow: 0 0 5px var( --input-error-color) !important;
+}
+
+.errorText {
+  color: var( --input-error-color);
+}
+
+.error .floatingPlaceholder {
+  color: var( --input-error-color) !important;
+}
+.errorIcon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var( --input-error-color);
+  font-size: 1.25rem;
+  pointer-events: auto; 
+}

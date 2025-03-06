@@ -1,7 +1,16 @@
 .popover {
-  position: absolute;
-  width: 350px;
   z-index: 1000;
-  border:none;
-  transition: border 0.3s ease-in-out;
+  width: 350px !important;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px var(--input-border); 
+  transition: transform 0.2s ease-in-out;
+
+  &.top {
+    margin-bottom: 4px;
+  }
+  
+  &.bottom {
+    margin-top: 4px;
+  }
 }

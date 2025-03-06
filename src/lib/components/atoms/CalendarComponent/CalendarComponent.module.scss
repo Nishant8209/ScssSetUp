@@ -5,14 +5,17 @@
   padding: 10px;
   background: var(--calendar-bg) !important;
   
-  border: 2px solid transparent; // Initially no border
+  // border: 2px solid transparent; // Initially no border
   border-top: none !important;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  transition: border 0.8s ease-in-out;
+  border-radius: 5px;
+  // border-bottom-right-radius: 5px;
+  // border-bottom-left-radius: 5px;
+ 
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.3);
   &.active {
+    // box-shadow: 0 0 5px  var(--border-color);
+    // border: 2px solid var(--border-color); // Apply border when active
 
-    border: 2px solid var(--border-color); // Apply border when active
   }
 }
 
@@ -29,17 +32,17 @@
   border-bottom-left-radius: 5px;
 }
 
-:global(.react-calendar::before) {
-  content: "";
-  display: block !important;
-  width: 90%;
-  height: 2px;
-  background-color: var(--line-color);
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+// :global(.react-calendar::before) {
+//   content: "";
+//   display: block !important;
+//   width: 90%;
+//   height: 2px;
+//   background-color: var(--line-color);
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
 
 .calendar {
   width: 100%;

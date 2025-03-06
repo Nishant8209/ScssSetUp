@@ -1,7 +1,9 @@
 @use './variables' as *;
 
+
 // Generate CSS variables for light mode
 :root {
+ 
   --custom-color: #{$customcolor};
   --font-family: #{$font-family};
   --font-size: #{$font-size};
@@ -31,6 +33,7 @@
   --input-focus-border: #{$input-focus-border};
   --input-icon-color: #{$input-icon-color};
   --input-focus-border2:#{$input-focus-border2};
+  --input-error-color:#{$input-error-color};
 }
 
 
@@ -57,4 +60,5 @@
   --input-focus-border: #{$input-focus-border-dark};
   --input-icon-color: #{$input-icon-color-dark};
   --input-focus-border2:#{$input-focus-border2-dark};
+  --input-error-color:#{$input-error-color-dark};
 }

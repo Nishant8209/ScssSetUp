@@ -4,7 +4,7 @@ import styles from "./CalendarComponent2.module.scss";
 import "react-calendar/dist/Calendar.css";
 
 interface CalendarComponentProps {
-  onChange: (dates: [Date, Date] | null) => void;
+  onChange: (dates: [Date, Date] ) => void;
   isActive: boolean;
   value: [Date, Date] | null;
 }

@@ -1,31 +1,9 @@
-/* index.scss or input.module.scss */
-.custom-input {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px 12px;
-    border: 2px solid var(--custom-border-color, #ccc);
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--custom-bg, #fff);
-    color: var(--custom-text-color, #333);
-    
-    /* Shadow effect */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    
-    &:focus {
-      border-color: var(--custom-focus-color, #007bff);
-      box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
-    }
-  
-    &::placeholder {
-      color: var(--custom-placeholder, #888);
-      font-size: 14px;
-    }
-  }
-  
 .test {
-  margin: 50px;
-  width:800px ;
+  margin: auto;
+  width: 600px;
+  margin-top: 10px;
+  
+}
+body{
+    background-color: #f4f4f4;    
 }

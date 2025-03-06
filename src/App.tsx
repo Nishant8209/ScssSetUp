@@ -3,16 +3,15 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './index.scss'
 import "./App.scss";
-import DatePicker from "./lib/components/atoms/DatePickerInput";
-import DatePicker2 from "./lib/components/atoms/DatePickerInput2";
+
+import { Form } from "./lib/components/molecules/Form";
 
 const App: React.FC = () => {
 
   return (
     <>
       <div className="test">
-        <div className=""><DatePicker /></div>
-        <div className="pt-5"><DatePicker2 /></div>
+        <Form></Form>
       </div>
     </>
   );

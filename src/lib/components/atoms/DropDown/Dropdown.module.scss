@@ -1,0 +1,97 @@
+.dropdown {
+  position: relative;
+
+  .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    padding: 16px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    color: var(--input-text);
+    &:focus-within,
+    &.open {
+      border-color: var(--input-border);
+      box-shadow: 0 0 5px var(--input-border);
+    }
+
+    .selectedValue {
+    
+      display: flex;
+      align-items: center;
+      min-height: 1.6rem; // Prevents shrinking when empty
+      padding-top: 6px; // Moves selected text slightly downward
+      line-height: 1.2; // Ensures proper vertical alignment
+    }
+  }
+
+  // Floating label styles
+  .floatingLabel {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 1.15rem;
+    font-weight: normal;
+    color: var(--input-placeholder);
+    transition: all 0.3s ease;
+    pointer-events: none;
+
+    &.active {
+      top: 10px;
+      font-size: 1rem;
+      font-weight: normal;
+      color: var(--input-text);
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2);
+
+    .option {
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background: #007bff;
+        color: white;
+      }
+
+      &:focus {
+        background: #007bff;
+        color: white;
+        outline: 2px solid #0056b3;
+        outline-offset: -2px;
+        position: relative;
+      }
+
+      &.focused {
+        background: #007bff;
+        color: white;
+      }
+
+      &.selected {
+        font-weight: 500;
+        background-color: #e6f2ff;
+        color: #007bff;
+
+        &:hover {
+          background: #007bff;
+          color: white;
+        }
+      }
+    }
+  }
+}
